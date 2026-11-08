@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezzet Rehberi - İletişim</title>
+    <link rel="stylesheet" href="css/still.css">
+</head>
+<body>
+
+<header>
+    <h1>Lezzet Rehberi</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="tarifler.html">Tarifler</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html" class="aktif">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="sayfa-baslik">
+        <h2>Bizimle İletişime Geçin</h2>
+        <p>Görüş, öneri ve tarif paylaşımlarınız için aşağıdaki formu doldurabilirsiniz.</p>
+    </section>
+
+    <section class="iletisim-alani">
+        <article class="iletisim-bilgileri">
+            <h3>İletişim Bilgileri</h3>
+            <p><strong>E-posta:</strong> iletisim@lezzetrehberi.com</p>
+            <p><strong>Konum:</strong> Ankara, Türkiye</p>
+            <p><strong>Çalışma Saatleri:</strong> Hafta içi 09:00 - 18:00</p>
+        </article>
+
+        <form id="iletisimFormu" action="" method="post">
+            <p>
+                <label for="iletisimAd">Adınız Soyadınız:</label><br>
+                <input type="text" id="iletisimAd" name="iletisimAd" placeholder="Ad Soyad giriniz" required>
+            </p>
+
+            <p>
+                <label for="iletisimEposta">E-posta Adresiniz:</label><br>
+                <input type="email" id="iletisimEposta" name="iletisimEposta" placeholder="ornek@mail.com" required>
+            </p>
+
+            <p>
+                <label for="iletisimKonu">Konu:</label><br>
+                <select id="iletisimKonu" name="iletisimKonu">
+                    <option value="oneri">Tarif Önerisi</option>
+                    <option value="hata">Hata Bildirimi</option>
+                    <option value="isbirligi">İş Birliği</option>
+                    <option value="diger">Diğer</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="iletisimMesaj">Mesajınız:</label><br>
+                <textarea id="iletisimMesaj" name="iletisimMesaj" rows="5" cols="45" placeholder="Mesajınızı buraya yazınız..." required></textarea>
+            </p>
+
+            <button type="submit">Mesajı Gönder</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Lezzet Rehberi · Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>

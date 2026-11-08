@@ -3,58 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lezzet Rehberi . Ana Sayfa</title>
+    <title>Lezzet Rehberi - Ana Sayfa</title>
     <link rel="stylesheet" href="css/still.css">
 </head>
 <body>
 
 <header>
-
     <h1>Lezzet Rehberi</h1>
     <nav>
         <ul>
-            
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="tarifler">Günün Tarifi</a></li>
-            <li><a href="tablo-bolumu">Besin değerleri</a></li>
-            <li><a href="bulten">Bültene katıl</a></li>
+            <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
+            <li><a href="tarifler.html">Tarifler</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
         </ul>
     </nav>
 </header>
-<hr>
 
 <main>
-
     <section id="giris">
         <h2>Ev Yapımı Pratik Lezzetler</h2>
         <p>Harika yemekler yapmak için ihtiyacınız olan tarifler burada.</p>
     </section>
 
     <section id="tarifler">
-        <h2>Günün Tarifi:Fırında Kremalı Makarna</h2>
+        <h2>Günün Tarifi: Fırında Kremalı Makarna</h2>
 
         <img src="img/yemek2.jpg" alt="Fırında Kremalı Makarna Görseli" width="300">
 
-        <h3>Gerekli Malzemeler(Sırasız Liste)</h3>
+        <h3>Gerekli Malzemeler</h3>
         <ul>
             <li>1 paket makarna</li>
             <li>200 ml krema</li>
-            <li>1 su bardağı kaşar peynir</li>
+            <li>1 su bardağı kaşar peyniri</li>
             <li>1 çay kaşığı tuz ve karabiber</li>
         </ul>
 
-        <h3>Hazırlanış Adımları(sıralı liste)</h3>
+        <h3>Hazırlanış Adımları</h3>
         <ol>
             <li>Makarnayı bol tuzlu suda 8-10 dakika haşlayın.</li>
             <li>Kremayı ve baharatları tencerede ısıtın.</li>
-            <li>Haşlayan makarnayı sosla karıştırıp fırın kabına alın</li>
-            <li>Üzerine kaşar serpip 180 derecede kızarana kadar pişirin</li>
+            <li>Haşlanan makarnayı sosla karıştırıp fırın kabına alın.</li>
+            <li>Üzerine kaşar serpip 180 derecede kızarana kadar pişirin.</li>
         </ol>
     </section>
 
     <section id="tablo-bolumu">
         <h2>Porsiyon ve Besin Değerleri</h2>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Bileşenler</th>
@@ -62,32 +58,27 @@
                     <th>Günlük İhtiyaç Oranı</th>
                 </tr>
             </thead>
-
             <tbody>
                 <tr>
                     <td>Kalori</td>
                     <td>450 kcal</td>
                     <td>%22</td>
                 </tr>
-
                 <tr>
                     <td>Karbonhidrat</td>
                     <td>55 g</td>
                     <td>%18</td>
                 </tr>
-
                 <tr>
                     <td>Protein</td>
                     <td>14 g</td>
                     <td>%28</td>
                 </tr>
-
                 <tr>
                     <td>Yağ</td>
                     <td>18 g</td>
                     <td>%25</td>
                 </tr>
-
                 <tr>
                     <td colspan="2">Alerjen Uyarısı: Glüten ve Süt Ürünü İçerir</td>
                     <td><strong>Dikkat</strong></td>
@@ -97,22 +88,21 @@
     </section>
 
     <section id="bulten">
-        <h2>Tarifi Puanla , Bültene Abone ol ve Deneyimlerini bizimle paylaş</h2>
+        <h2>Tarifi Puanla, Bültene Abone Ol ve Deneyimlerini Bizimle Paylaş</h2>
 
         <form id="tarifFormu" action="" method="get">
-
             <p>
-                <label for="adSoyad">Adınız Soyadınız</label><br>
-                <input type="text" id="adSoyad" name="adSoyad" placeholder="örn Efe İzmirli" required>
+                <label for="adSoyad">Adınız Soyadınız:</label><br>
+                <input type="text" id="adSoyad" name="adSoyad" placeholder="Örn: Efe İzmirli" required>
             </p>
 
             <p>
                 <label for="eposta">E-posta Adresiniz:</label><br>
-                <input type="email" id="eposta" name="eposta" placeholder="örn: izmirliefeyavuz@gmail.com" required>
+                <input type="email" id="eposta" name="eposta" placeholder="Örn: izmirliefeyavuz@gmail.com" required>
             </p>
 
             <p>
-                <label for="puan">Tarife Puanınız(1-10)</label><br>
+                <label for="puan">Tarife Puanınız (1-10):</label><br>
                 <input type="number" id="puan" name="puan" min="1" max="10" value="10" required>
             </p>
 
@@ -121,12 +111,12 @@
                 <select id="zorluk" name="zorluk">
                     <option value="kolay">Kolay</option>
                     <option value="orta" selected>Orta</option>
-                    <option value="zor">Zor/Zahmetli</option>
+                    <option value="zor">Zor / Zahmetli</option>
                 </select>
             </p>
 
             <p>
-                <label for="yorum">Yorumunuz / Pişirme notunuz</label><br>
+                <label for="yorum">Yorumunuz / Pişirme Notunuz:</label><br>
                 <textarea id="yorum" name="yorum" rows="3" cols="50" placeholder="Deneyimlerinizi yazın..."></textarea>
             </p>
 
@@ -135,10 +125,9 @@
     </section>
 </main>
 
-<hr>
-
 <footer>
     <p>&copy; 2026 Lezzet Rehberi · Tüm hakları saklıdır.</p>
 </footer>
+
 </body>
 </html>
